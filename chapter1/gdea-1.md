@@ -62,6 +62,30 @@ Guidelines (EPA 2002a).
 ## 小结
 导则的应用范围及目的。
 
+## 1.2 适用人员
+
+本导使用广泛，模型开发人员，计算机程序员，模型使用者，政策制定者。其中模型使用者主要指生成模型结果（建模、设置参数等）和使用模型结果的管理者。可以看出，针对模型这个工具，他的用户非常的多，整个模型所涉及的角色也有多种多样，不管时开发模型的人，还是构建模型的人，甚至运用模型结果的管理者都可以从本导则中获取相关信息。
+
+> This document is intended for a wide range of audiences, including model developers, computer
+> programmers, model users, policy makers who work with models, and affected stakeholders. Model
+> users include those who generate model output (i.e., who set up, parameterize, and run models) and
+> managers who use model outputs. 
+
+## 1.3 本导则的结构
+
+本导则主要为大部分模型用户，提供了一种好的模型的评判标准。附录部分则提供了对于特定用户来说更有用的技术信息和例子。本导则的结构来说，主要分为三个核心主题：模型开发、评估和应用。但是必须意识到三个主题并不是为完全严格次序，例如，分析和评估模型与输入数据以确保其质量贯穿模型开发和应用的整个阶段。
+
+> The main body of this document provides an overview of principles of good modeling for all users. The appendices present technical information and examples that may be more appropriate for specific user groups. For organizational simplicity, the main body of this guidance has separate chapters on the three key topics: model development, model evaluation, and model application. However, it is important to note that these three topics are not strictly sequential, For example, the process of evaluating a model and its input data to ensure their quality should be undertaken and documented during all stages of model development and application. 
+
+**第一章**对导则进行了基本介绍和适用范围确定。**第二章**在环境决策中模型的作用。在第二章的末尾的图1展现了模型开发和应用过程的步骤，模型在公共政策过程中的决策。**第三章和第四章**为模型开发（包括问题的确定）和模型评估的流程和方法。**第五章**，则叙述了从环境模型到环境政策及管理决策最有效的实践案例。
+
+附录部分则提供了更多的技术细节和案例。A为全部的划线术语解释和定义。B总结了整合到环境管理中模型的类别。C则为质量管理程序和其他相关主题的背景信息。D为实践操作概览，涉及模型评估，包括模型的同行评议过程的细节信息，特定的技术工具等。
+
+## 1.4 补充说明
+
+> The principles and practices described in this guidance are designed to apply generally to all types of models; however, EPA program and regional offices may modify the recommendations, as appropriate and necessary to the specific modeling project and application. Each EPA office is responsible for implementing the best practices described in a manner appropriate to meet its needs.
+> As indicated by the use of non-mandatory language such as “may,” “should,” and “can,” this document provides recommendations and suggestions and does not create legal rights or impose legally binding requirements on EPA or the public.
+> The Council for Regulatory Environmental Modeling has also developed the Models Knowledge Base — a Web-based inventory of information on models used in EPA — as a companion product to complement this document. This inventory provides convenient access to standardized documentation on the models’development, scientific basis, user requirements, evaluation studies, and application examples. 
 
 ---
 
@@ -79,4 +103,4 @@ Guidelines (EPA 2002a).
  2018-8-16
  folder=/微信公众号/水环境编Cheng长/
 
- [1]: http://comieswater-1254012817.cossh.myqcloud.com/comieswater/1517576665753.jpg
+[1]: http://comieswater-1254012817.cossh.myqcloud.com/comieswater/1517576665753.jpg
