@@ -3,9 +3,7 @@ title: 《模型开发、评估、应用导则》批注：第三章（1）
 tags: 1000天持续行动,GDEA
 date:   2018-8-23
 ---
-·[473]|1000天行动计划
-**读书笔记**/热点追踪/论文研读/教程手册
-	
+
 ![封面](http://comieswater-1254012817.cossh.myqcloud.com/comieswater/1534259099598.png)
 
 # 3 模型开发
@@ -34,7 +32,7 @@ date:   2018-8-23
 1. 确认模型是否是解决该问题的真正的有效工具，何种类型的模型将是最有用的，是否已经有存在的模型能够来用于解决该问题。
 2. 若不存在现成的模型，则需要开发恰当的模型，模型开发则是模型评估的重点。
 3. 部门需要持续的跟踪评价现有模型或新的模型是否能够解决环境问题。
- 
+
  >Model development begins after problem identification — i.e., after the Agency has identified an environmental problem it needs to address and has determined that models may provide useful input for the Agency decision making needed to address the problem (see Section 2.2). In this guidance, model development comprises the steps involved in (1) confirming whether a model is, in fact, a useful tool to address the problem; what type of model would be most useful; and whether an existing model can be used for this purpose; as well as (2) developing an appropriate model if one does not already exist. Model development sets the stage for model evaluation (covered in chapter 3), an ongoing process in which the Agency evaluates the appropriateness of the existing or new model to help address the environmental problem.
 
 模型的开发的过程主要分为三步：
@@ -59,7 +57,7 @@ A “graded approach” should be used throughout the model development process.
 网          站 | comieswater.com
 
 
-![赞赏我](http://comieswater-1254012817.cossh.myqcloud.com/IMG_3077.JPG)
+
 
  2018-8-16
 

@@ -3,8 +3,7 @@ title: 《模型开发、评估、应用导则》批注：第三章(2)
 tags: 1000天持续行动,GDEA
 date:   2018-8-25
 ---
-·[474]|1000天行动计划
-**读书笔记**/热点追踪/论文研读/教程手册
+
 
 ![封面](http://comieswater-1254012817.cossh.myqcloud.com/comieswater/1534259099598.png)
 
