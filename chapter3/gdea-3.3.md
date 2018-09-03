@@ -76,6 +76,35 @@ It is recommended that the evaluation process apply the principles of scientific
 
 >Model complexity can be constrained by eliminating parameters when sensitivity analyses (Chapter 4/Appendix D) show that they do not significantly affect the outputs and when there is no process-based rationale for including them. However, a variable of little significance in one application of a model may be more important in a different application. In past reviews of Agency models, the SAB has supported the general guiding principle of simplifying complex models, where possible, for the sake of transparency (SAB 1988), but has emphasized that care should be taken not to eliminate important parameters from process-based models simply because data are unavailable or difficult to obtain (SAB 1989). In any case, the quality and resolution of available data will ultimately constrain the type of model that can be applied. Hence, it is important to identify the existing data and and/or field collection efforts that are needed to adequately parameterize the model framework and support the application of a model. The NRC Committee on Models in the Regulatory Decision Process recommended that models used in the regulatory process should be no more complicated than is necessary to inform regulatory decision and that it is often preferable to omit capabilities that do not substantially improve model performance (NRC 2007).
 
+
+
+### 3.3.2 模型编程和验证
+编程的过程为将模型的数学方程利用编程语言表达出来，以便通过计算机数值求解。代码的验证为检查代码是否有内在的数值方面问题导致无法求解，要根据其设计的标准进行测试其是否能够正常运行。验证过程应该包括检查计算编程语言的数值问题，以及概念模型和主要控制方程的一致性（Beck et al.1994)。在模型被完全开发出来后，代码的独立性测试作为额外的完整性和质量检查是非常有用的。
+
+> Model coding translates the mathematical equations that constitute the model framework into functioning computer code. Code verification ascertains that the computer code has no inherent numerical problems with obtaining a solution. Code verification tests whether the code performs according to its design specifications. It should include an examination of the numerical technique in the computer code for consistency with the conceptual model and governing equations (Beck et al. 1994). Independent testing of the code once it is fully developed can be useful as an additional check of integrity and quality.
+
+下面这些步骤对于减少代码错误和促进代码验证过程：
+1. 编程过程要使用注释行去描述每一部分的目的。这有助于未来修订过程及其他模型者改进模型。
+2. 在概念模型开发阶段，采用流程图来表达主要环节。在编程开始时，者有助于展现模型程序的全视角的结构，为模型的每一步的计算过程提供了简单的描述。
+
+>Several early steps can help minimize later programming errors and facilitate the code verification process. For example:
+>- Using “comment” lines to describe the purpose of each component within the code during development makes future revisions and improvements by different modelers and programmers more efficient.
+>- Using a flow chart when the conceptual model is developed and before coding begins helps show the overall structure of the model program. This provides a simplified description of the calculations that will be performed in each step of the model.
+
+在封装模型时，考虑到模型行为，将模型/程序分解为若干部分或者模块化也是一种非常有用的方法。这使得模型使用者能够去分别测试每个子模块的行为，加快了测试的速度，从而增强了编程团队的信心。模块是指一个或者更大的软件中独立的一个子模块。相对于直接对大模块进行操作，将大型模块分解为多个小模块，有助于模型的测试和查错（定位和修正错误）。分解的模块也很容易在未来的其他模型项目中进行复用，更新，增强功能或移除而不需要改动全局的模型架构。
+
+>Breaking the program/model into component parts or modules is also useful for careful consideration of model behavior in an encapsulated way. This allows the modeler to test the behavior of each sub- component separately, expediting testing and increasing confidence in the program. A module is an independent piece of software that forms part of one or more larger programs. Breaking large models into discrete modules facilitates testing and debugging (locating/correcting errors) compared to large programs. The approach also makes it easier to re-use relevant modules in future modeling projects, or to update, add, or remove sections of the model without altering the overall program structure.
+
+在一般任务中采用通用算法能够节省时间和资源，从而能够将更多的精力放在开发和改进模型新需求的内容。算法是用来解决问题的一个（一系列）精确的规则。通用算法通常会作为开源代码发表（e.g. Press 1992）。开发者能够学习使用机构的模块和代码去避免重新造轮子。CREM模块基础知识包含了模块的网络目录，提供了很多模型的资源。
+>Use of generic algorithms for common tasks can often save time and resources, allowing efforts to focus on developing and improving the original aspects of a new model. An algorithm is a precise rule (or set of rules) for solving some problem. Commonly used algorithms are often published as “recipes” with publicly available code (e.g., Press 1992). Developers should review existing Agency models and code to minimize duplication of effort. The CREM models knowledge base, which will contain a Web- accessible inventory of models, will provide a resource model developers can use for this purpose.
+
+软件工程在最近几年飞速的发展，并在技术和平台领域快速的进步。例如，在过去推荐的通用开发语言中没有使用面向对象的平台进行开发，而如今已经采用了。面向对象的平台模型系统使用了操作对象的指令集。这些对象作为类的实例继承对象的特性，类是一系列共享行为和架构的对象。类的架构是由类的变量决定，其用来声明类的对象；同时其通过类的一系列方法来进行操作（Booch 1994）。模型通过面向对象的平台开发时，用户应该输出平台生成实际的数学关系，作为代码验证的一部分。
+>Software engineering has evolved rapidly in recent years and continues to advance rapidly with changes in technology and user platforms. For example, some of the general recommendations for developing computer code given above do not apply to models that are developed using object-oriented platforms. Object-oriented platform model systems use a collection of cooperating “objects.” These objects are treated as instances of a class within a class hierarchy, where a class is a set of objects that share a common structure and behavior. The structure of a class is determined by the class variables, which represent the state of an object of that class; the behavior is given by the set of methods associated with the class (Booch 1994). When models are developed with object-oriented platforms, the user should print out the actual mathematical relationships the platform generates and review them as part of the code validation process.
+
+关于编程风格和约定有非常多的参考资料，其提供了很多针对模型开发和测试特定技术建议。（例如，The Elements of Programming Style [ Kernigham and Plaugher 1988 ]）。另外，Guidance for Quality Assurance Project Plans for Modeling (EPA 2002b) 也有很多有关代码验证的实践，对于其遵循特定更多QA计划（见附录C，BOX C2）。
+
+>Many references on programming style and conventions provide specific, technical suggestions for developing and testing computer code (e.g., The Elements of Programming Style [Kernigham and Plaugher 1988]). In addition, the Guidance for Quality Assurance Project Plans for Modeling (EPA 2002b) suggests a number of practices during code verification to “check” how well it follows the “specifications” laid out during QA planning (Appendix C, Box C2: Configuration Tests Specified in the QA Program).
+
 参考文献：
 [1] Gaber N, Foley G, Pascual P, et al. Guidance on the development, evaluation, and application of environmental models[J]. Report, Council for Regulatory Environmental Modeling, 2009, 81.
 
