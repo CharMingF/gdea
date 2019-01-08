@@ -7,7 +7,41 @@ date:   2018-12-16
 **读书笔记**/热点追踪/论文研读/教程手册
 ![封面](http://comieswater-1254012817.cossh.myqcloud.com/comieswater/1534259099598.png)
 
-## 4.2 同行评审
+# 4.2 模型评估的最佳实践
+    P4.2模型评估的总述，通过定量和定性的两种主要模式来进行评估工作。
+上节前言所述的四个问题主要涉及四方面的问题：模型背后框架的科学可靠性、获取到的数据的数量和质量、与观测条件的一致性程度和模型当前应用下的适应性。这个导则描述了一些工具和最佳的实践手段去解决这些问题：同行专家评审；包括数据质量评估在内的QA项目计划（质量保证）；模型校准及验证（关于模型的精确性和预测能力的定性和定量的评价）；敏感性和不确定性分析。这些工具和方法过程包括定性和定量化的技术手段：
+
+>The four questions listed above address the soundness of the science underlying a model, the quality and quantity of available data, the degree of correspondence with observed conditions, and the appropriateness of a model for a given application. This guidance describes several “tools” or best practices to address these questions: peer review of models; QA project planning, including data quality assessment; model corroboration (qualitative and/or quantitative evaluation of a model’s accuracy and predictive capabilities); and sensitivity and uncertainty analysis. These tools and practices include both qualitative and quantitative techniques:
+
+1. 定性评估：模型预测过程中的不确定性的来源可能并不能被量化。例如，模型背后的理论的不确定性，因为理论的行为是通过数学方程呈现环境要素来表达，从而这些理论被模拟呈现出来。模型参数值是否恰当和不能被直接观测或测量到的输入条件（如气体排放估计），这些都需要专家来评价。一些不确定性地方也需要定性评价。关于模型行为和模型预测值对比，这些评价可能都需要涉及专家来进行评价。
+2. 定量评估：一些引起不确定性的因素诸如模型的参数和一些输入条件是能够通过定量的手段来进行评估的，主要涉及统计性不确定性和敏感性分析。这些分析也能被用于定量描述与观测数据不同的现状条件是模拟的。但是，因为模型的预测不是观测值，特别需要注意对模型模拟值和观测值差异的量化分析。
+
+>Qualitative assessments: Some of the uncertainty in model predictions may arise from sources whose uncertainty cannot be quantified. Examples are uncertainties about the theory underlying the model, the manner in which that theory is mathematically expressed to represent the environmental components, and the theory being modeled. Subjective evaluation of experts may be needed to determine appropriate values for model parameters and inputs that cannot be directly observed or measured (e.g., air emissions estimates). Qualitative assessments are needed for these sources of uncertainty. These assessments may involve expert elicitation regarding the system’s behavior and comparison with model forecasts.
+>Quantitative assessments: The uncertainty in some sources — such as some model parameters and some input data — can be estimated through quantitative assessments involving statistical uncertainty and sensitivity analyses. These types of analyses can also be used to quantitatively describe how model estimates of current conditions may be expected to differ from comparable field observations. However, since model predictions are not directly observed, special care is needed when quantitatively comparing model predictions with field data.
+
+模型的评估是一个不断迭代的过程。然而，这些手段和方法可能需要高效的贯穿模型的评估、测试和应用阶段，其不应该被理解为单独的一个模型评估的步骤。
+模型评估应该使用一个现有的恰当和合理的评分的方法来进行管理（EPA 2001,2002b)。这个方法能够满足模型评估随着问题而修改，以及程序不断变化的需求。例如，一个筛选模型（用于提供保守型风险规避方案）被用于风险管理，其应该能够严谨的评估去避免漏报，同时也不能带来显著的数据生成的负担（误报）。理想情况下，决策制定者和模型操作者一起工作在一个项目中去确定合理的模型评估（见3.1）。
+>Model evaluation should always be conducted using a graded approach that is adequate and appropriate to the decision at hand (EPA 2001, 2002b). This approach recognizes that model evaluation can be modified to the circumstances of the problem at hand and that programmatic requirements are varied. For example, a screening model (a type of model designed to provide a “conservative” or risk-averse answer) that is used for risk management should undergo rigorous evaluation to avoid false negatives, while still not imposing unreasonable data-generation burdens (false positives) on the regulated community. Ideally, decision makers and modeling staff work together at the onset of new projects to identify the appropriate degree of model evaluation (see Section 3.1).
+
+外部条件也能够影响模型评估过程，例如，在模型的结果需要高昂代价的控制策略和可能引起巨大的争议，此时就需要更加精细的模型评估。在这些案例中，模型的许多方面可能需要仔细审查，模型操作者必须对模型评估过程进行详细的文档记录，以回答和解释可能出现的质问。在模型出现之前未遇到过的特殊性和极端情形，就需要更深层次的模型评估工作。
+
+>External circumstances can affect the rigor required in model evaluation. For example, when the likely result of modeling will be costly control strategies and associated controversy, more detailed model evaluation may be necessary. In these cases, many aspects of the modeling may come under close scrutiny, and the modeler must document the findings of the model evaluation process and be prepared to answer questions that will arise about the model. A deeper level of model evaluation may also be appropriate when modeling unique or extreme situations that have not been previously encountered.
+
+最后，正如前面所说的，一些评估需要多模型耦合，这种耦合对于不确定性的评估和应用模型过程有更多的要求，每个单独的模型和全部整合的模型都需要被评估。
+
+节4.2.1和4.2.2，分别介绍了同行评审和输入数据的质量保证措施。节4.2.3，描述模型的一致性和敏感性分析、不确定性分析（附录D）。
+>Finally, as noted earlier, some assessments require the use of multiple, linked models. This linkage has implications for assessing uncertainty and applying the system of models. Each component model as well as the full system of integrated models must be evaluated.
+>Sections 4.2.1 and 4.2.2, on peer review of models and quality assurance protocols for input data, respectively, are drawn from existing guidance. Section 4.2.3, on model corroboration activities and the use of sensitivity and uncertainty analysis, provides new guidance for model evaluation (along with Appendix D).
+
+扩展阅读：
+Box 6: Examples of Life Cycle Model Evaluation
+(from Box 4-5 in NRC’s Models in Environmental Regulatory Decision Making)
+The value in evaluating a model from the conceptual stage through the use stage is illustrated in a multi-year project conducted by the Organization for Economic Cooperation and Development (OECD). The project sought to develop a screening model that could be used to assess the persistence and long-range transport potential of chemicals. To ensure its effectiveness, the screening model needed to be a consensus model that had been evaluated against a broad set of available models and data.
+This project began at a 2001 workshop to set model performance and evaluation goals that would provide the foundation for subsequent model selection and development (OECD 2002). OECD then established an expert group in 2002. This group began its work by developing and publishing a guidance document on using multimedia models to estimate environmental persistence and long-range transport. From 2003 to 2004, the group compared and assessed the performance of nine available multimedia fate and transport models (Fenner et al. 2005; Klasmeier et al. 2006). The group then developed a parsimonious consensus model representing the minimum set of key components identified in the model comparison. They convened three international workshops to disseminate this consensus model and provide an ongoing model evaluation forum (Scheringer et al. 2006).
+In this example, more than half the total effort was invested in the conceptual and model formulation stages, and much of the effort focused on performance evaluation. The group recognized that each model’s life cycle is different, but noted that attention should be given to developing consensus-based approaches in the model concept and formulation stages. Conducting concurrent evaluations at these stages in this setting resulted in a high degree of buy- in from the various modeling groups.
+
+### 4.2.1 同行评审
+
     P介绍同行评审的重要性。
 
 同行评议为独立评估和机构使用的环境模型的主要机制。其提供了一种独立、专业检查评估，主要实现两方面:
@@ -70,6 +104,10 @@ Using an ad hoc panel of scientists.
 Using an established external peer review mechanism such as the SAB Holding a technical workshop.
 
 >Several sources provide guidance for determining the qualifications and number of reviewers needed for a given modeling project (SAB 1993a; EPA 2000c, 1993, 1994a). Key aspects are summarized in Appendix D of this guidance.
+
+
+
+
 
 参考文献：
 [1] Gaber N, Foley G, Pascual P, et al. Guidance on the development, evaluation, and application of environmental models[J]. Report, Council for Regulatory Environmental Modeling, 2009, 81.
