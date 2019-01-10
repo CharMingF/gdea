@@ -1,5 +1,5 @@
 # Summary
-* [基本介绍](gdea-0.md)
+* [基本介绍](README.md)
 * [1 介绍]
   * [1.1 手册的目的及应用范围](chapter1/gdea-1.md)
   * [1.2 目标读者](chapter1/gdea-1.md)
