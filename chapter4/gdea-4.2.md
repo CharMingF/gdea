@@ -82,7 +82,7 @@ In this example, more than half the total effort was invested in the conceptual 
 7. 经验资料或数据如何加强或者削弱通过模型获取到的结论。
 
 为了发挥同行评审的作用和提高其效率，外部的评审应该尽可能在模型开发阶段就开始（EPA 2000b），因为同行评审需要很多时间和资源，其应作为工程计划和条款的组成部分。同行评审在模型开发的早期阶段能够帮助评估模型的基础概念，可能能够通过修正错误方案，在有争议的地方提供强有力的技术支持而节省大量的时间（SAB 1993a，EPA 1993).同样，其也能够在模型开发的后期阶段发挥作用，作为独立的模型代码的外部审核（例如模型验证），模型的适用性的外部审核应该在任何决策支持中被提前考虑，能够有效的避免对于特定管理目的，模型被不恰当的应用（EPA 1993)。
->The following aspects of a model should be peer-reviewed to establish scientific credibility (SAB 1993a, EPA 1993):
+> The following aspects of a model should be peer-reviewed to establish scientific credibility (SAB 1993a, EPA 1993):
 Appropriateness of input data.
 Appropriateness of boundary condition specifications.
 Documentation of inputs and assumptions.
@@ -91,7 +91,7 @@ Documentation and justification for adjusting model inputs to improve model perf
 Model application with respect to the range of its validity.
 Supporting empirical data that strengthen or contradict the conclusions that are based on model results.
 
->To be most effective and maximize its value, external peer review should begin as early in the model development phase as possible (EPA 2000b). Because peer review involves significant time and resources, these allocations must be incorporated into components of the project planning and any related contracts. Peer review in the early stages of model development can help evaluate the conceptual basis of models and potentially save time by redirecting misguided initiatives, identifying alternative approaches, or providing strong technical support for a potentially controversial position (SAB 1993a, EPA 1993). Peer review in the later stages of model development is useful as an independent external review of model code (i.e., model verification). External peer review of the applicability of a model to a particular set of conditions should be considered well in advance of any decision making, as it helps avoid inappropriate applications of a model for specific regulatory purposes (EPA 1993).
+> To be most effective and maximize its value, external peer review should begin as early in the model development phase as possible (EPA 2000b). Because peer review involves significant time and resources, these allocations must be incorporated into components of the project planning and any related contracts. Peer review in the early stages of model development can help evaluate the conceptual basis of models and potentially save time by redirecting misguided initiatives, identifying alternative approaches, or providing strong technical support for a potentially controversial position (SAB 1993a, EPA 1993). Peer review in the later stages of model development is useful as an independent external review of model code (i.e., model verification). External peer review of the applicability of a model to a particular set of conditions should be considered well in advance of any decision making, as it helps avoid inappropriate applications of a model for specific regulatory purposes (EPA 1993).
 
 同行审议是管理者应用模型去做决策分析的后勤保障，完成外部的评审需要的机制包括但不限于：
 1. 优秀的科学家陪审团队。
@@ -99,19 +99,110 @@ Supporting empirical data that strengthen or contradict the conclusions that are
 3. 构建技术工作组。
 
 对于给定模型工程，一些资源提供了评审成员的资格和数量参考(SAB 1993a; EPA 2000c, 1993, 1994a). 关键方面在 附录 D 。
->The peer review logistics are left to the discretion of the managers responsible for applying the model results to decision making. Mechanisms for accomplishing external peer review include (but are not limited to):
+> The peer review logistics are left to the discretion of the managers responsible for applying the model results to decision making. Mechanisms for accomplishing external peer review include (but are not limited to):
 Using an ad hoc panel of scientists.
 Using an established external peer review mechanism such as the SAB Holding a technical workshop.
 
->Several sources provide guidance for determining the qualifications and number of reviewers needed for a given modeling project (SAB 1993a; EPA 2000c, 1993, 1994a). Key aspects are summarized in Appendix D of this guidance.
+> Several sources provide guidance for determining the qualifications and number of reviewers needed for a given modeling project (SAB 1993a; EPA 2000c, 1993, 1994a). Key aspects are summarized in Appendix D of this guidance.
 
 
+### 4.2.2 质量保证计划和数据质量评估
 
+与同行审查类似的作用，数据质量评估主要确认模型是否依据合理的科学的原则开发而成。虽然不可避免，数据总是有多变性，但是仍然有很多相关的数据质量评估的导则用于降低书的不确定性（附录D，质量保证计划和数据评判标准）：
+
+切实履行QA计划方案也能够用于确认模型应对特殊的情形的表现，其很好的对应了 节4.1 提到的第四个模型评估的问题，模型项目满足QA目标的程度通常是外部同行评审过程的函数。The Guidance for Quality Assurance Project Plans for Modeling (EPA 2002b) 提供了如何进行模型的质量保证计划的一般性说明（例如：规格或者评估标准，模型过程的多阶段评估；矫正的反馈报告；通过或否决过程等）。数据质量评估是模型QA计划的重要部分。
+
+用于参数化和验证的数据的质量还是数量（主要是代表性）都要在模型项目的任何相关阶段进行评估。这种评估能去评价是否获取到的数据足以支撑模型应用，以及通过和观测数据进行对比，确保数据具有被模拟的真实系统的代表性。
+
+> Like peer review, data quality assessment addresses whether a model has been developed according to the principles of sound science. While some variability in data is unavoidable (see Section 4.2.3.1), adhering to the tenets of data quality assessment described in other Agency guidance (Appendix D, Box D2: Quality Assurance Planning and Data Acceptance Criteria) helps minimize data uncertainty.
+
+> Well-executed QA project planning also helps ensure that a model performs the specified task, which addresses the fourth model evaluation question posed in Section 4.1\. As discussed above, evaluating the degree to which a modeling project has met QA objectives is often a function of the external peer review process. The Guidance for Quality Assurance Project Plans for Modeling (EPA 2002b) provides general information about how to document quality assurance planning for modeling (e.g., specifications or assessment criteria development, assessments of various stages of the modeling process; reports to management as feedback for corrective action; and finally the process for acceptance, rejection, or qualification of the output for use) to conform with EPA policy and acquisition regulations. Data quality assessments are a key component of the QA plan for models.
+
+> The formation and use of an ad hoc panel of peer reviewers may be subject to the Federal Advisory Committee Act (FACA). Compliance with FACA’s requirements is summarized in Chapter Two of the Peer Review Handbook, “Planning a Peer Review” (EPA 2000c). Guidance on compliance with FACA may be sought from the Office of Cooperative Environmental Management. Legal questions regarding FACA may be addressed to the Cross-Cutting Issues Law Office in the Office of General Counsel.  Note that a technical workshop held for peer review purposes is not subject to FACA if the reviewers provide individual opinions. [ Note that there is no “one time meeting” exemption from FACA. The courts have held that even a single meeting can be subject to FACA. ] An attempt to obtain group advice, whether it be consensus or majority-minority views, likely would trigger FACA requirements.  Other guidance that can help ensure the quality of data used in modeling projects includes:  • Guidance for the Data Quality Objectives Process, a systematic planning process for environmental data collection (EPA 2000a).  • Guidance on Choosing a Sampling Design for Environmental Data Collection, on applying statistical sampling designs to environmental applications (EPA 2002c).  • Guidance for Data Quality Assessment: Practical Methods for Data Analysis, to evaluate the extent to which data can be used for a specific purpose (EPA 2000b).
+
+> Both the quality and quantity (representativeness) of supporting data used to parameterize and (when available) corroborate models should be assessed during all relevant stages of a modeling project. Such assessments are needed to evaluate whether the available data are sufficient to support the choice of the model to be applied (question 2, Section 4.1), and to ensure that the data are sufficiently representative of the true system being modeled to provide meaningful comparison to observational data (question 3, Section 4.1).
+
+### 4.2.3 验证、敏感性分析、不确定分析
+
+”模型究竟多大程度的表达的真实系统？“ 这个问题真的不是很好回答。通常，回答这个问题并不是说把模型结果和观测结果对比下那么简单。节3.1 有提到在开发或者使用环境模式时，模型者和决策者应该考虑在模型应用情境下的可被接受的不确定性程度。为了做好这些，需要去理解模型内在的不确定性，这节就主要通过三部分加深理解：
+
+1.  模型验证（节 4.2.3.2 ），包括全部定性和定量的方法来评估模型与现实的一致性程度。
+
+2.  敏感性分析（节 4.2.3.3），涉及研究到模型输入值或者假设的改变对模型输出的影响或模型的响应。
+
+3.  不确定性分析（节 4.2.3.3），分析模型由于对模型参数真值或其分布缺乏足够的认识而造成的影响。
+
+按照一定方案进行分析，并将结果记录以支撑模型。节4.2.3.1 描述定义了多种不确定性的类型和概念，有关模型的验证和敏感性、不确定性分析帮助评估模型。
+
+* * *
+
+这里多罗嗦下吧，谈下自己的个人理解。所谓的验证、敏感性分析和不确定性分析，实际上是模型校准的一部分工作。前两者在校准前期过程中，而不确定性则是校准后期的一种评估。
+
+验证，简单的说就是模型模拟结果与实际观测值进行对比，当然，这个比较的这个实际测值是独立与校准使用的那套数据的，对于水质模型的季节性变化而言，一般需要独立的2、3年的数据进行验证，才能说这套参数比较成功。
+
+敏感性呢？敏感性，简单就是参数变化对模型的影响。拿生活中来举例，比如车速这个东西，油门和刹车就对其特别的敏感，但是外面的风向、风速可能就不是那么的敏感，车什么颜色吧，这个对车速基本没有影响了。也就是不同的参数对模型的表现的重要性是不同的，当然这里需要注意的是参数和模型表现的对应关系，上述例子中的油门和车速对应，也就是说如果拿车好不好看来说，油门就没那么敏感了。敏感性分析有助于我们校准模型，因为一般模型的参数都会很多，校准过程中肯定会先调整主要的参数。那么模型的评价为啥需要涉及到这个特性呢？我还没有看后面的内容，在这里先猜一下，对敏感性的认识，有助于把娃模型参数及外部条件变化时，模型的表现。还是前面的例子，假如我对车速比较在意，那么我可能更多的就关注刹车和油门，当地的日常平均风速呢，我可以稍微关注下，车的颜色我可能完全不关注。
+
+最后就是不确定性了，这个不确定性主要是用于把握模型的可靠性程度。其毕竟是模型，很多方面我们无法完全掌控，不确定性的分析就是相当于我们穷尽各种可能，分析在不同可能下模型的表现。还是上面的例子，试图得到最大的车速，比如我开始只考虑了发动机的功率，通过这其计算出来一个最大车速（比如180 km/h），一般来说比较准确了，但是我还是不敢保证，我不确定是不是还有其他因素会对车速有影响呢？这时候就需要穷尽所有可能的因素了，比如轮胎好不好？车的流线如何？这些因素我全部考虑在内，得出一些结论，比如好的轮胎和差的轮胎最多影响20%的车速，车的形状顶多影响10%的车速，之后我就可以把这个最大车速的范围较为可靠的计算出来(150-180 km/h)，而且比较有信心不管怎么都不会脱离这个范围。
+
+* * *
+
+> The question “How closely does the model approximate the real system of interest?” is unlikely to have a simple answer. In general, answering this question is not simply a matter of comparing model results and empirical data. As noted in Section 3.1, when developing and using an environmental model, modelers and decision makers should consider what degree of uncertainty is acceptable within the context of a specific model application. To do this, they will need to understand the uncertainties underlying the model. This section discusses three approaches to gaining this understanding:
+*   Model corroboration (Section 4.2.3.2), which includes all quantitative and qualitative methods for evaluating the degree to which a model corresponds to reality.
+
+*   Sensitivity analysis (Section 4.2.3.3), which involves studying how changes in a model’s input values or assumptions affect its output or response.
+
+*   Uncertainty analysis (Section 4.2.3.3), which investigates how a model might be affected by the lack of knowledge about a certain population or the real value of model parameters.
+
+> Where practical, the recommended analyses should be conducted and their results reported in the documentation supporting the model. Section 4.2.3.1 describes and defines the various types of uncertainty, and associated concepts, inherent in the modeling process that model corroboration and sensitivity and uncertainty analysis can help assess.
+
+#### 4.2.3.1 不确定性的类型
+
+不确定性是存在于模型过程的各个方面。为了成功的把模型获取到的信息应用于决策支持，区分出对模型输出结果（无论是定性和定量方面）有重要影响的不确定性和明确其重要性是非常关键的步骤。
+
+第三章定义的那样，本导则所指的不确定性为**有关特别的要素、参数（输入）、模型等缺乏机理表达引起的不确定性**。对于组织机构，影响模型质量的不确定被归类为以下：
+
+1. 模型架构的不确定性。这类型主要是系统关键行为的机理表达的缺失；空间和时间分辨率的限制；系统的简化等导致的。
+2. 模型输入不确定性。由数据测量误差、测量值和输入模型的值（因聚合或平均引起）不一致性，参数值的不确定性导致。
+3. 模型适用范围的不确定性。来源于模型使用超出了其开发时限定的条件，或对多个已存在的不同时间和空间尺度的模型开发的耦合模型产生的。
+
+> Uncertainties are inherent in all aspects of the modeling process. Identifying those uncertainties that significantly influence model outcomes (either qualitatively or quantitatively) and communicating their importance is key to successfully integrating information from models into the decision making process. As defined in Chapter 3, uncertainty is the term used in this guidance to describe incomplete knowledge about specific factors, parameters (inputs), or models. For organizational simplicity, uncertainties that affect model quality are categorized in this guidance as:
+	- Model framework uncertainty, resulting from incomplete knowledge about factors that control the behavior of the system being modeled; limitations in spatial or temporal resolution; and simplifications of the system.
+	- Model input uncertainty, resulting from data measurement errors, inconsistencies between measured values and those used by the model (e.g., in their level of aggregation/averaging), and parameter value uncertainty.
+	- Model niche uncertainty, resulting from the use of a model outside the system for which it was originally developed and/or developing a larger model from several existing models with different spatial or temporal scales.
+ 
+（这段话比较难翻译，因为整体比较别扭，所以这里我特别的解释下，所谓的不确定性，主要是引入概率角度来对模型进行分析。因为世界不可知的部分和随机性，导致我们所有发生的事情都不可能百分之百。特别地，模型还是现实的抽象，其更会由很多不确定性的因素存在，导致我们对模型得到的结果不能够百分之百的确信。上面提到了三种的不确定性呢？解释下就是：
+- 模型架构。模型是现实问题的抽象，那么其必然有部分的失真。比如时间和空间的分辨率不够，导致表达的不够精细化。模型的简化，使得模型很多过程没有表达出来。甚至模型中对机理过程的表达，也不完全是准确的。那么这些小的问题，就会带来模型结果有一定的偏离，这些是不可避免的，但是我们能够评估其影响有多大，从而给出的结果是一个区间或者带有概率密度函数的结果。
+- 模型输入。我们输入模型的数据，本身就因为测量可能存在误差，同时测量值和模型所需要的值之间也存在一定的不匹配性，比如很多时候获取到的数据是平均值，这种数据就引入了一定的不确定因素。
+- 模型的适用性。比如模型开发的时候是用于海洋模型，而现在用于内陆水体，那么其中的部分过程是不是存在大的差别，这种带来的模型适用性的问题。
+
+---
+
+事实上，以上三种类型的不确定性是相关，模型架构及框架引起的不确定性是由于不完整的科学数据及所模拟机理过程缺失的结果。模型框架的不确定性也可能是由于概念模型到数学模型转换时简化过程的引起的。在科学文献中，这种类型的不确定性也是指结构误差（Beck 1987），概念误差（Konikow and Bredehoeft 1992)，概念模型中的不确定性（Usunoff et al.1992),或模型误差/不确定性（EPA 1993；Luis and McLaughlin 1992). 结构误差与模型的算法的数学结构紧密相关，概念模型指的是模型控制方程的机理。术语“模型误差”和“模型不确定性”都是表达模型框架不确定性的。
+
+> In reality, all three categories are interrelated. Uncertainty in the underlying model structure or model framework uncertainty is the result of incomplete scientific data or lack of knowledge about the factors that control the behavior of the system being modeled. Model framework uncertainty can also be the result of simplifications needed to translate the conceptual model into mathematical terms as described in Section 3.3. In the scientific literature, this type of uncertainty is also referred to as structural error (Beck 1987), conceptual errors (Konikow and Bredehoeft 1992), uncertainties in the conceptual model (Usunoff et al. 1992), or model error/uncertainty (EPA 1997; Luis and McLaughlin 1992). Structural error relates to the mathematical construction of the algorithms that make up a model, while the conceptual model refers to the science underlying a model’s governing equations. The terms “model error” and “model uncertainty” are both generally synonymous with model framework uncertainty.
+
+许多模型通过不断的迭代更新来逐渐的减小其机理过程不确定性，模型可能随着版本的更新逐渐产生重要的变化。近二十年来，对于预测汽车尾气排放的MOBILE模型，CMAQ模型、QUAL2水质模型等，这些模型都是经过多个版本更新，对主要的科学过程进行了完善和拓展（Scheffe and Morris 1993; Barnwell et al.2004;EPA 1999c,as cited in NRC 2007)。
+
+> Many models are developed iteratively to update their underlying science and resolve existing model framework uncertainty as new information becomes available. Models with long lives may undergo important changes from version to version. The MOBILE model for estimating atmospheric vehicle emissions, the CMAQ (Community Multi-scale Air Quality) model, and the QUAL2 water quality models are examples of models that have had multiple versions and major scientific modifications and extensions in over two decades of their existence (Scheffe and Morris 1993; Barnwell et al. 2004; EPA 1999c, as cited in NRC 2007).
+
+在合适的模型框架被开发后，模型本身若在输入数据并没有足够的质量情况下也带来很大的不确定性，用于校准或验证的实测数据的质量受不确定性和变异性的影响。本导则使用“数据不确定性”来表示在数据采集和处理过程中，测量误差、分析不精确度、有限的样本带来的不确定性。
+
+> When an appropriate model framework has been developed, the model itself may still be highly uncertain if the input data or database used to construct the application tool is not of sufficient quality. The quality of empirical data used for both model parameterization and corroboration tests is affected by both uncertainty and variability. This guidance uses the term “data uncertainty” to refer to the uncertainty caused by measurement errors, analytical imprecision, and limited sample sizes during data collection and treatment.
+
+与数据不确定性不同，变异性常来自于确定的参数的固有的随机性，同时也来自于环境过程的异质性和多样性。变异性的例子包括生态条件的波动，栖息地的变化、人群的基因变异。模型参数的变异与输入数据被聚合（空间或时间）的程度有很大关系。数据的不确定性在能被通过进一步研究而减小（EPA 1997)，则被成为可减小的不确定性。反之，不能通过研究减小的，则被称为不可减小的不确定性。
+
+> In contrast to data uncertainty, variability results from the inherent randomness of certain parameters, which in turn results from the heterogeneity and diversity in environmental processes. Examples of variability include fluctuations in ecological conditions, differences in habitat, and genetic variances among populations (EPA 1997). Variability in model parameters is largely dependent on the extent to which input data have been aggregated (both spatially and temporally). Data uncertainty is sometimes referred to as reducible uncertainty because it can be minimized with further study (EPA 1997). Accordingly, variability is referred to as irreducible because it can be better characterized and represented but not reduced with further study (EPA 1997).
+
+模型应用匹配性是指模型的科学使用的基本条件。应用匹配的不确定性是在一组特殊条件下模型应用恰当性的函数。在已有的模型中选择单个模型或从很多不同时间或空间分辨率模型中选择模型进行耦合时，应用的匹配的不确定性是特别需要注意的（Levins 1992）。
+
+SAB's对MMSOILS(Multimedia Contaminant Fate, Transport and Exposure Model)的综述中提供了有关应用匹配不确定性的案例。SAB质疑使用筛选模型去概化大量的地表异质性特征条件或非水相污染物存在是否合理。SAB认同MMSOILS 模型在其原始开发背景下的应用，但是否定了其在异质条件下的应用。
+
+> A model’s application niche is the set of conditions under which use of the model is scientifically defensible (EPA 1994b). Application niche uncertainty is therefore a function of the appropriateness of a model for use under a specific set of conditions. Application niche uncertainty is particularly important when (a) choosing among existing models for an application that lies outside the system for which the models were originally developed and/or (b) developing a larger model from several existing models with different spatial or temporal scales (Levins 1992).
+> The SAB’s review of MMSOILS (Multimedia Contaminant Fate, Transport and Exposure Model) provides a good example of application niche uncertainty. The SAB questioned the adequacy of using a screening- level model to characterize situations where there is substantial subsurface heterogeneity or where non- aqueous phase contaminants are present (conditions differ from default values) (SAB 1993b). The SAB considered the MMSOILS model acceptable within its original application niche, but unsuitable for more heterogeneous conditions.
 
 
 参考文献：
 [1] Gaber N, Foley G, Pascual P, et al. Guidance on the development, evaluation, and application of environmental models[J]. Report, Council for Regulatory Environmental Modeling, 2009, 81.
-
 
 ![页尾](http://comieswater-1254012817.cossh.myqcloud.com/页尾识别new-2017-09-22.png)
 微信公众号 | 水环境编Cheng长
