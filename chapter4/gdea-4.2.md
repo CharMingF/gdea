@@ -200,6 +200,75 @@ SAB's对MMSOILS(Multimedia Contaminant Fate, Transport and Exposure Model)的综
 > A model’s application niche is the set of conditions under which use of the model is scientifically defensible (EPA 1994b). Application niche uncertainty is therefore a function of the appropriateness of a model for use under a specific set of conditions. Application niche uncertainty is particularly important when (a) choosing among existing models for an application that lies outside the system for which the models were originally developed and/or (b) developing a larger model from several existing models with different spatial or temporal scales (Levins 1992).
 > The SAB’s review of MMSOILS (Multimedia Contaminant Fate, Transport and Exposure Model) provides a good example of application niche uncertainty. The SAB questioned the adequacy of using a screening- level model to characterize situations where there is substantial subsurface heterogeneity or where non- aqueous phase contaminants are present (conditions differ from default values) (SAB 1993b). The SAB considered the MMSOILS model acceptable within its original application niche, but unsuitable for more heterogeneous conditions.
 
+#### 4.2.3.2 校准及验证 
+    本节主要讲述模型的验证，模型验证是评估模型表现重要的过程。
+
+模型和观测是处于相互依赖的关系，这种关系极其复杂，存在递进迭代的关系。观测提供了概念模型的基础和促进模型的开发，以及参数的估计。观测也是验证模型的重要要素。在模型开发完成后，模型能够对于观测数据用于修改已经存在的模型，还是开发新的模型做出判断。观测和模型的处理是独立进行的……虽然环境数据系统应用广泛，如能力评估，变化趋势分析、基础研究，但是在监督管理过程发挥出模型的功能需要观测和模型的很好的融合。依靠模型和观测的迭代的自适应策略，在2003 NRC 报告“Adaptive Monitoring and Assessment for the Comprehensive Everglades Restoration Plan”有详细叙述，并提供了如何提高两者的协调性。
+-— NRC Committee on Models in the Regulatory Decision Process (NRC 2007)
+>The interdependence of models and measurements is complex and iterative for several reasons. Measurements help to provide the conceptual basis of a model and inform model development, including parameter estimation. Measurements are also a critical tool for corroborating model results. Once developed, models can derive priorities for measurements that ultimately get used in modifying existing models or in developing new ones. Measurement and model activities are often conducted in isolation…Although environmental data systems serve a range of purposes, including compliance assessment, monitoring of trends in indicators, and basic research performance, the importance of models in the regulatory process requires measurements and models to be better integrated. Adaptive strategies that rely on iterations of measurements and modeling, such as those discussed in the 2003 NRC report titled Adaptive Monitoring and Assessment for the Comprehensive Everglades Restoration Plan, provide examples of how improved coordination might be achieved.
+— NRC Committee on Models in the Regulatory Decision Process (NRC 2007)
+
+模型的验证包括了定性和定量的两方面的方法，用于评估模型和实际的匹配程度。这些方法的要求是依据模型的类型和应用来确定的。定量的模型验证使用统计学方法去计算模型模拟结果和实测数据的匹配程度。而定量的验证一般为专家问询模型在数据缺乏情形下的表现来评估。这些验证过程推动模型预测符合一致性。
+
+>Model corroboration includes all quantitative and qualitative methods for evaluating the degree to which a model corresponds to reality. The rigor of these methods varies depending on the type and purpose of the model application. Quantitative model corroboration uses statistics to estimate how closely the model results match measurements made in the real system. Qualitative corroboration activities may include expert elicitation to obtain beliefs about a system’s behavior in a data-poor situation. These corroboration activities may move model forecasts toward consensus.
+
+
+对于新开发的模型框架或未经测试的数学过程，推荐采用正规的验证过程。正规的验证可能涉及的过程有，针对模型验收的假设的公式测试，验证数据集的独立性测试和定量测试准则。许多案例中，获取用于正式模型验证的独立的验证数据集是非常昂贵或不可能的，这种情况下，模型的评估可能需要采用本节后续介绍的其他评估工具的组合分析。
+
+>For newly developed model frameworks or untested mathematical processes, formal corroboration procedures may be appropriate. Formal corroboration may involve formulation of hypothesis tests for model acceptance, tests on datasets independent of the calibration dataset, and quantitative testing criteria. In many cases, collecting independent datasets for formal model corroboration is extremely costly or otherwise unfeasible. In such circumstances, model evaluation may be appropriately conducted using a combination of other evaluation tools discussed in this section.
+
+鲁棒性（Robustness)是表达模型对于不同设计的环境条件下表现同等的好的特征（Reckhow 1994；Borsuk et al.2002)。用于验证和校准的数据集的相似度某种程度上可用来分析模型鲁棒性。例如，如果用于验证模型的的数据集与校准模型的数据集统计学上相似或基本一致，那么验证的过程就不能确认模型校准的表现，且不能帮助确定模型的鲁棒性。反之，当验证数据集和校准数据集显著不同时，验证过程则能确认模型的表现和鲁棒性。
+
+>Robustness is the capacity of a model to perform equally well across the full range of environmental conditions for which it was designed (Reckhow 1994; Borsuk et al. 2002). The degree of similarity among datasets available for calibration and corroboration provides insight into a model’s robustness. For example, if the dataset used to corroborate a model is identical or statistically similar to the dataset used to calibrate the model, then the corroboration exercise has provided neither an independent measure of the model’s performance nor insight into the model’s robustness. Conversely, when corroboration data are significantly different from calibration data, the corroboration exercise provides a measure of both model performance and robustness.
+
+对于同样应用需求中，在多个模型中选择可用模型时，推荐采用定量模型的验证方法。如，模型通过观测值和模拟值的差异的统计学上的表现进行排名进而选择（e.g.,EPA 1992)。EPA的空气和辐射部门经常这样操作。在发现某个模型表现比给定的其他模型明显要好时，OAR则推荐该模型作为空气质量模型导则中的优先应用模型（EPA 2003a).如果模型表现基本一致，则要通过其他因素诸如历史应用、使用的广泛性、资源需求等来进行对比选择。
+>Quantitative model corroboration methods are recommended for choosing among multiple models that are available for the same application. In such cases, models may be ranked on the basis of their statistical performance in comparison to the observational data (e.g., EPA 1992). EPA’s Office of Air and Radiation evaluates models in this manner. When a single model is found to perform better than others in a given category, OAR recommends it in the Guidelines on Air Quality Models as a preferred model for application in that category (EPA 2003a). If models perform similarly, then the preferred model is selected based on other factors, such as past use, public familiarity, cost or resource requirements, and availability.
+
+模型的验证模型评估的重要过程，通常情况下，我们模型经过一套数据校准后，要用另外一套数据来进行验证，这套数据最好与校准所用数据有显著的不同，这样一方面能够让我们确认模型的校准的准确性，同时能够确认模型的鲁棒性（适用性），而显著不同，这里就有不同的要求，比如水质模型一般回选择多年的，如果采用枯水年校准，一般选择丰水年验证，再选择另外一年进行二次验证，从而确定模型参数的合理性。
+
+---
+
+>Box 8: Example: Comparing Results from Models of Varying Complexity
+(From Box 5-4 in NRC ’s Models in Environmental Regulatory Decision Making)
+The Clean Air Mercury Rule requires industry to reduce mercury emissions from coal-fired power plants. A potential benefit is the reduced human exposure and related health impacts from methylmercury that may result from reduced concentrations of this toxin in fish. Many challenges and uncertainties affect assessment of this benefit. In its assessment of the benefits and costs of this rule, EPA used multiple models to examine how changes in atmospheric deposition would affect mercury concentrations in fish, and applied the models to assess some of the uncertainties associated with the model results (EPA 2005).
+EPA based its national-scale benefits assessment on results from the mercury maps (MMaps) model. This model assumes a linear, steady-state relationship between atmospheric deposition of mercury and mercury concentrations in fish, and thus assumes that a 50% reduction in mercury deposition rates results in a 50% decrease in fish mercury concentrations. In addition, MMaps assumes instantaneous adjustment of aquatic systems and their ecosystems to changes in deposition — that is, no time lag in the conversion of mercury to methylmercury and its bioaccumulation in fish. MMaps also does not deal with sources of mercury other than those from atmospheric deposition. Despite those limitations, the Agency concluded that no other available model was capable of performing a national-scale assessment.
+To further investigate fish mercury concentrations and to assess the effects of MMaps ’ assumptions, EPA applied more detailed models, including the spreadsheet-based ecological risk assessment for the fate of mercury (SERAFM) model, to five well-characterized ecosystems. Unlike the steady-state MMaps model, SERAFM is a dynamic model which calculates the temporal response of mercury concentrations in fish tissues to changes in mercury loading. It includes multiple land-use types for representing watershed loadings of mercury through soil erosion and runoff. SERAFM partitions mercury among multiple compartments and phases, including aqueous phase, abiotic participles (for example, silts), and biotic particles (for example, phytoplankton). Comparisons of SERAFM’s predictions with observed fish mercury concentrations for a single fish species in four ecosystems showed that the model under- predicted mean concentrations for one water body, over-predicted mean concentrations for a second water body, and accurately predicted mean concentrations for the other two. The error bars for the observed fish mercury concentrations in these four ecosystems were large, making it difficult to assess the models’ accuracy. Modeling the four ecosystems also showed how the assumed physical and chemical characteristics of the specific ecosystem affected absolute fish mercury concentrations and the length of time before fish mercury concentrations reached steady state.
+Although EPA concluded that the best available science supports the assumption of a linear relationship between atmospheric deposition and fish mercury concentrations for broad-scale use, the more detailed ecosystem modeling demonstrated that individual ecosystems were highly sensitive to uncertainties in model parameters. The Agency also noted that many of the model uncertainties could not be quantified. Although the case studies covered the bulk of the key environmental characteristics, EPA found that extrapolating the individual ecosystem case studies to account for the variability in ecosystems across the country indicated that those case studies might not represent extreme conditions that could influence how atmospheric mercury deposition affected fish mercury concentrations in a water body.
+This example illustrates the usefulness of investigating a variety of models at varying levels of complexity.
+hierarchical modeling approach, such as that used in the mercury analysis, can provide justification for simplified model assumptions or potentially provide evidence for a consistent bias that would negate the assumption that a simple model is appropriate for broad-scale application.
+
+#### 4.2.3.3 敏感性和不确定性分析 
+    介绍敏感性和不确定性。
+
+敏感性分析是研究模型的输入改变后其的响应过程（Saltelli et al.2000a)。敏感性分析是一种推荐的工具，用于将环境模型的中的最重要的和最不重要的不确定因素特征化。
+>Sensitivity analysis is the study of how a model’s response can be apportioned to changes in model inputs (Saltelli et al. 2000a). Sensitivity analysis is recommended as the principal evaluation tool for characterizing the most and least important sources of uncertainty in environmental models.
+
+不确定分析研究模型参数的真实值或未知的概率分布。不确定性有时候可以通过收集额外的数据和深入研究减小。EPA 导则（e.g. ,EPA 1997)将不确定性按照其考虑输入数据变异性还是模型参数分为两种类型。之前提到的，模型参数和输入数据的变异性能够通过深入研究来更好的特征化，但是通常其并不能被减小（EPA 1997)。
+>Uncertainty analysis investigates the lack of knowledge about a certain population or the real value of model parameters. Uncertainty can sometimes be reduced through further study and by collecting additional data. EPA guidance (e.g., EPA 1997) distinguishes uncertainty analysis from methods used to account for variability in input data and model parameters. As mentioned earlier, variability in model parameters and input data can be better characterized through further study but is usually not reducible (EPA 1997).
+
+虽然敏感性和不确定性有一定的相关性，但是敏感性是有关模型变量的“算法特性”，而不确定性则是参数的特性。敏感性分析评估的是模型的对特定参数的“敏感性”，而不确定性分析则是评估有关参数的“不确定性”。两种类型的分析对于增加用户对模型结果的确信度都是非常重要的。不确定性分析和敏感性分析的方法在附录D讨论。
+> Although sensitivity and uncertainty analysis are closely related, sensitivity is algorithm-specific with respect to model “variables” and uncertainty is parameter-specific. Sensitivity analysis assesses the “sensitivity” of the model to specific parameters and uncertainty analysis assesses the “uncertainty” associated with parameter values. Both types of analyses are important to understand the degree of confidence a user can place in the model results. Recommended techniques for conducting uncertainty and sensitivity analysis are discussed in Appendix D.
+
+NRC 委员会指出不确定性分析不仅要考虑环境管理模型本身，而且也要与政策制定者交流不确定性。为促进模型不确定性的沟通，委员会推荐采用考虑未知量为随机变量和决策制定者通过列出一系列可能的值进行情景分析的混合方法。
+>The NRC committee pointed out that uncertainty analysis for regulatory environmental modeling involves not only analyzing uncertainty, but also communicating the uncertainties to policy makers. To facilitate communication of model uncertainty, the committee recommends using hybrid approaches in which unknown quantities are treated probabilistically and explored in scenario-assessment mode by decision makers through a range of plausible values. The committee further acknowledges (NRC 2007) that:
+
+委员会进一步说明（NRC 2007)：
+有效的不确定性交流需要与相关的决策人员深度的沟通交流，去确保他们明白有关不确定性的来源和特点，以及不确定可能造成的影响的必要信息。也就是说，环境管理的不确定性分析的表现需要分析和决策制定者广泛的讨论。
+Effective uncertainty communication requires a high level of interaction with the relevant decision
+makers to ensure that they have the necessary information about the nature and sources of uncertainty and their consequences. Thus, performing uncertainty analysis for environmental regulatory activities requires extensive discussion between analysts and decision makers.
+
+---
+本小节内容比较少，导则的内容主要介绍思路，具体的方法还在附录中，也就是其仅仅说要注意什么内容，本节简要介绍了敏感性分析和不确定性分析，两者都是模型评估的重要的量化手段，其中不确定性分析尤其重要，不确定性我们也介绍很多遍了，这里定义不再赘述，不确定性就是你对模型模拟的结果的确信程度，你有多大把握你给出的结果是正确的。这点非常重要？为什么？
+
+因为对于模型从业者来说，遇到的最大的问题就是模型准不准？如果不准，有啥用？经常听到有很多不同领域的模型玩家，在评审时被专家问住：“你的模型结果效果渲染很酷，也非常清晰，那么我想知道你的模型准么？”，通常这时候，很多人底气一下子就不足了，虽然自己踏实的做出来的，但是自己也不知道准不准。
+
+那么，不确定性就是一种解药，只要是模型就有误差，这是模型本身存在不可回避的本质属性，但是我们能通过不确定性分析来增加我们模型结果的可靠度，比如，我最后给出的模型结果不是一个具体的值，而是不确定分析下的一个范围，或者不同值出现的概率，这样，我就能够很有底气的去回答模型准不准的问题。
+
+没人能试图准确预测未来，但是我们能够利用各种工具来尽可能合理应对未来。
+
+4.2节翻译完了，这节内容丰富，如何评估模型，是使用者需要关注的，也是建模者需要关注的，甚至所有人都需要关注的，我们现在的模型大部分都是缺失这部分工作的，从而导致模型的应用受限，我们要转变观念，将模型作为工具，让其帮助我们更好的决策。
+
+---
 
 参考文献：
 [1] Gaber N, Foley G, Pascual P, et al. Guidance on the development, evaluation, and application of environmental models[J]. Report, Council for Regulatory Environmental Modeling, 2009, 81.
@@ -211,5 +280,4 @@ SAB's对MMSOILS(Multimedia Contaminant Fate, Transport and Exposure Model)的综
 
 ![赞赏我](http://comieswater-1254012817.cossh.myqcloud.com/IMG_3077.JPG)
 
- 2018-8-16
-
+2019-1-27
